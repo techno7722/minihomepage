@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./static/font.css"/>
+    <link rel="stylesheet" href="./static/layout.css"/>
+    <link rel="stylesheet" href="./static/diary.css"/>
+     <script src="https://kit.fontawesome.com/c0db4385d9.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <div class="bookcover">
+    <div class="bookdot">
+    <div class="page">
+			
+        <div class="profile-container">
+                <div class="header profile-title font-neo">
+              TODAY<span class="color-red"> 27</span> | TOTAL 22772
+                </div>
+            <div class="box profile-box">
+              <div class="profile-image">
+                <img
+                  class="profile-image-img"
+                  src="https://cdn.pixabay.com/photo/2013/11/01/11/13/dolphin-203875_960_720.jpg"
+                  alt="돌고래"/>
+              </div>
+              <div class="profile-text font-kyobohand">
+                바다가 보고 싶어요 <br /> 모두 바다를 보도록 해<br /> 바다가,,,,들린ㄷr,,,,
+              </div>
+              <div class="profile-username font-kyobohand">
+                <span style="color: darkblue">seatalker</span>
+              </div>
+              <div class="profile-dropdown">
+                <div class="dropdown-btn">
+                  <div class="dropdown-title">파도타기</div>
+                  <div class="triangle-down"></div>
+                </div>
+                <div class="dropdown-content">
+                  <a href="https://cafe.naver.com/codeuniv" target="_blank">코뮤니티로 가기</a>
+                  <a href="https://www.instagram.com/coding_comu/" target="_blank"
+                    >인스타그램으로 가기</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="header content-title">
+              <div class="content-title-name">흠냐링~</div>
+              <div class="content-title-url">url</div>
+            </div>
+            <div class="box content-box">     
+                  <div class="calender-box font-neo"> 
+                    <div class="big-number">8.23 <br/> MON</div> 
+                    <div class="small-number"> 
+                      <div class="date"><span class="color-red"> 1 </span></div>
+                      <div class="date">2</div>
+                      <div class="date">3</div>
+                      <div class="date">4</div>
+                      <div class="date">5</div>
+                      <div class="date">6</div>
+                      <div class="date">7</div>
+                      <div class="date"><span class="color-red">8</span></div>
+                      <div class="date">9</div>
+                      <div class="date">10</div>
+                      <div class="date">11</div>
+                      <div class="date">12</div>
+                      <div class="date">13</div>
+                      <div class="date">14</div>
+                      <div class="date"><span class="color-red">15</span></div>
+                      <div class="date">16</div>
+                      <div class="date">17</div>
+                      <div class="date">18</div>
+                      <div class="date">19</div>
+                      <div class="date">20</div>
+                      <div class="date">21</div>
+                      <div class="date"><span class="color-red">22</span></div>
+                      <div class="date">23</div>
+                      <div class="date">24</div>
+                      <div class="date">25</div>
+                      <div class="date">26</div>
+                      <div class="date">27</div>
+                      <div class="date">28</div>
+                      <div class="date"><span class="color-red">29</span></div>
+                      <div class="date">30</div>
+                      <div class="date">31</div>
+                  </div>
+                  </div>
+                  <div class="diary-contents"> 
+                        <div class="diary-contents-ct">
+                            <div class="diary-number"> 2021. 8. 23. 월 23:15 </div>
+                            <div class="diary-diary"> 살려달라고 울부짖다 <br/> 집에보내달라고 울부짖다 <br/>
+                            살려달라고 울부짖다 <br/> 집에보내달라고 울부짖다 <br/> 살려달라고 울부짖다 <br/> 집에보내달라고 울부짖다 </div>
+                        </div>
+                        <div class="diary-contents-ct">
+                            <div class="diary-number"> 2021. 8. 23. 월 23:15 </div>
+                            <div class="diary-diary"> 살려달라고 울부짖다 <br/> 집에보내달라고 울부짖다 <br/>
+                                살려달라고 울부짖다 <br/> 집에보내달라고 울부짖다 <br/> 살려달라고 울부짖다 <br/> 집에보내달라고 울부짖다 </div>
+                        </div>
+                        <div class="button-box"> 
+                          <button class="rock font-neo" onclick="getTextFile()"> <!--자바스크립트를 아래쪽에 써줬으면 여기도 스크립트 코드를 명시해야 함...!-->
+                          <i class="fas fa-user-lock"></i> 흠냐링의 비밀일기 볼래? </button>
+                        </div>
+                        <div class="diary-contents-ct" id="secret-box">
+                            <div class="diary-number"> 흠냐링의 비밀일기 </div>
+                            <div class="diary-diary" id="secret-diary"> </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="menu-container">
+          <a href="./미니홈피.html" > 홈 </a> 
+          <a href="./diary.html"> 다이어리</a>
+          <a href="./photo.html"> 사진첩 </a> 
+          <a href="./guestbook.html" > 방명록 </a> 
+        </div>  
+    </div>
+    </div>
+    </div>
+    <script>
+      function getTextFile() {
+        var input = document.createElement("input");
+        input.type = "file";
+        input.accept = "text/plain";
+        input.onchange = function (event) {
+          processFile(event.target.files[0]);
+        };
+        input.click();
+      }
+
+      function processFile(file) {
+        var reader = new FileReader();
+        reader.readAsText(file, "utf-8");
+
+        reader.onload = function () {
+          document.getElementById("secret-diary").innerText = reader.result;
+          document.getElementById("secret-box").style.display = "block";
+        };
+      }
+    </script>
+  </body>
+</html>

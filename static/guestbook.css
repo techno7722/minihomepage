@@ -1,0 +1,74 @@
+.content-box{
+    position: relative;
+    font-family: "NeoDunggeunmo";
+    font-size: 0.8rem;
+}
+
+.scroll-box{
+    position: absolute; 
+    top:15px; right:15px; bottom:15px; left:15px;
+    overflow: auto;
+}
+
+.guest-post{
+    margin-bottom: 3rem;
+}
+
+.guest-title{
+    height:2rem; 
+    display:flex; align-items: center;
+    background-color: cornflowerblue;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.white-color{
+    color:white;
+    margin: 0 1rem;
+}
+
+.fas{color:white;
+    margin-right: 1rem;}
+
+.guest-time{
+    font-size: 0.8rem;
+}
+
+.guest-contents{
+    margin: 1rem; 
+    display:flex;
+}
+
+.guest-img{
+    flex: 0 0 8rem;
+    height: 8rem; 
+    background-size: cover;
+
+    display:flex;
+    align-items: center; justify-content: center;
+}
+
+.background-1{
+    background-image: url("../static/image/backimg1.jpg");
+    background-size: cover;
+}
+
+.background-2{
+    background-image: url("../static/image/backimg2.jpg");
+    background-size: cover;
+}
+
+.background-3{
+    background-image: url("../static/image/backimg3.jpg");
+    background-size: cover;
+}
+
+.guest-img > img{
+    width:80%;
+}
+
+.guest-word{
+    flex:auto; /*1로 줘도 됨*/ 
+    font-size: 0.9rem;
+    margin-left: 1rem;
+}

@@ -1,0 +1,44 @@
+.content-box{
+    position: relative;
+    font-family: "NeoDunggeunmo";
+    font-size: 0.8rem;
+}
+
+.scroll-box{
+    position: absolute; 
+    top:15px; right:15px; bottom:15px; left:15px;
+    overflow: auto;
+}
+
+.photo-post{
+    margin-bottom: 24px;
+}
+
+.photo-title{
+    height:2rem; 
+    display:flex; align-items: center;
+    background-color: cornflowerblue;
+    padding-left: 1rem;
+}
+
+.photo-contents{
+    padding: 1rem; 
+    display:flex; flex-direction: column;
+}
+
+.photo-img{
+    width: 400px;
+}
+
+.photo-time{
+    font-size: 0.6rem;
+}
+
+.photo-img > img{
+    width:100%; padding-left:12px;
+    margin-bottom: 6px;
+}
+
+.photo-word{
+    padding-left:12px; 
+}

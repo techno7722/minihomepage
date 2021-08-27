@@ -1,0 +1,84 @@
+.content-box{
+    position: relative;
+    font-family: "NeoDunggeunmo";
+}
+
+.calender-box{
+    position:absolute;  
+    top:15px; left:15px; right:15px; height: 3rem; /*bottom은 지정하면 안돼ㅜㅠ*/
+    border: 1px solid  #e7e7e7;
+    display: flex; align-items: center;
+}
+
+.diary-contents{
+    position:absolute;
+    margin-top: 4rem; top:15px; left:15px; right:15px; bottom:15px;
+    overflow: auto;
+}
+
+.big-number{
+    flex: 0 o 2rem;
+    font-size: 1.2rem; text-align: center; color: #3b87ab;
+    margin: 0 1rem;
+}
+
+.small-number{
+    flex: 1; 
+    display:flex; flex-wrap: wrap; align-items: center;
+}
+
+.date{
+    flex: 0 0 1.5rem;
+    color: #707070;
+    cursor:pointer; /*마우스를 손가락 모양으로*/
+    text-align: center;
+}
+
+.color-red{
+    color:red;
+}
+
+.diary-contents-ct{
+    border: 1px solid #e7e7e7;
+    padding:1.5rem; margin-bottom :1.5rem;
+}
+
+.diary-number{
+    color: skyblue; font-size:0.8rem; margin-bottom:1rem;
+}
+
+.diary-diary{
+    text-align: center;
+}
+
+.button-box{
+    display:flex; justify-content: center;
+}
+
+.rock{
+    background-color:white; color:white;
+    margin-top:1rem;
+    padding:1rem; cursor:pointer;
+
+    transition: 800ms ease all; /*속도 가속-감속 모두 변화를 줌*/
+  border: none;
+}
+
+.rock:hover{
+    background: cornflowerblue; color:white;
+}
+
+.fas{
+    margin-right:0.5rem; font-size:0.5rem;
+}
+
+#secret-box{
+    display: none;
+}
+
+
+
+
+/*플렉스로 나눈 경우는 스크롤이 적용 안되냐? position으로 해야 스크롤이되넹
+다이어리 박스는 음... 이미지는 해야됐는딩 왜 플렉스 안해도 되징?
+그거랑 게시판 플렉스 따로준거...! 언제 다 물어보냐ㅜㅠ.*/
